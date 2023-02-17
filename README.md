@@ -89,8 +89,8 @@ measure the runtime and enter it into the table.
 | `n=2**13`      |       146 usec/loop       |    3.45 usec/loop     |
 | `n=2**14`      |       286 usec/loop       |    3.65 usec/loop     |
 | `n=2**15`      |       578 usec/loop       |    4.3 usec/loop      |
-| `n=2**16`      |       1.18 usec/loop      |    4.44 usec/loop     |
-| `n=2**17`      |       2.34 usec/loop      |    4.58 usec/loop     |
+| `n=2**16`      |       1.18 msec/loop      |    4.44 usec/loop     |
+| `n=2**17`      |       2.34 msec/loop      |    4.58 usec/loop     |
 | `n=2**18`      |       4.67 msec/loop      |    4.85 usec/loop     |
 | `n=2**19`      |       9.46 msec/loop      |    5.27 usec/loop     |
 | `n=2**20`      |       18.9 msec/loop      |    5.54 usec/loop     |
@@ -227,11 +227,11 @@ measure the runtime and enter it into the table.
 
 |                            | `array`        | `list`          | `tuple`        | `deque`         |
 | -------------------------- | -------------- | --------------  |--------------- | --------------- |
-| `sequential_search_itr`    | 8.66 msec/loop |  1.17 msec/loop | 1.12 msec/loop | 0.132 usec/loop |
-| `sequential_search_itr2`   | 11.2 msec/loop |  2.37 msec/loop | 2.52 msec/loop | 0.245 usec/loop |
+| `sequential_search_itr`    | 8.66 msec/loop |  1.17 msec/loop | 1.12 msec/loop |   132 usec/loop |
+| `sequential_search_itr2`   | 11.2 msec/loop |  2.37 msec/loop | 2.52 msec/loop |   109 usec/loop |
 | `sequential_search_rec`    |        ---     |  ---            |  ---           |  ---            |
-| `binary_search_itr`        | 9.82 usec/loop |  2.44 usec/loop | 2.25 usec/loop | 0.116 usec/loop |
-| `binary_search_rec`        | 11.1 usec/loop |  4.36 usec/loop | 4.45 usec/loop | 0.182 usec/loop |
+| `binary_search_itr`        | 9.82 usec/loop |  2.44 usec/loop | 2.25 usec/loop |   192 usec/loop |
+| `binary_search_rec`        | 11.1 usec/loop |  4.36 usec/loop | 4.45 usec/loop |   195 usec/loop |
 | `binary_search_rec2`       | 9.7 usec/loop  |  450 usec/loop  | 428 usec/loop  |  ---            |
 
 You should notice that:
